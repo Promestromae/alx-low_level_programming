@@ -1,21 +1,13 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * main - Entry point
- * Print _putchar followed by new line
- * Return: always 0
+ * _putchar - writes the character to stdout
+ * @c: The character to print
+ *
+ * Return: 1 om success
+ * On erro, - -1 is returned, and errno is set appropriately
  */
-int main(void)
+int _putchar(char c)
 {
-	char a[] = "_putchar";
-	int c = 0;
-
-	while (a[c] != '\0')
-	{
-		_putchar(a[c]);
-		c++;
-	}
-	_putchar(10);
-
-	return (0);
+	return (write(1, &c, 1));
 }

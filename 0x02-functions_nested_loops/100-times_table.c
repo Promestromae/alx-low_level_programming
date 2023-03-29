@@ -6,7 +6,7 @@
  *
  * Return: number matrix
  */
-void print_times table(int n)
+void print_times_table(int n)
 {
 	int x, y, z;
 

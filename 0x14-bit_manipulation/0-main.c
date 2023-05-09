@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - checker
- * Return: 0
+ * main - check the code
+ * Return: alwayus 0
  */
 int main(void)
 {

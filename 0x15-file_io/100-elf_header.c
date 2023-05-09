@@ -23,7 +23,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident);
 void close_elf(int elf);
 
 /**
- * check_elf - Checks if a fil is an ELF file.
+ * check_elf - Checks if a file is an ELF file.
  * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
  * Description: If the file is not an ELF file - exit code 98.
@@ -47,9 +47,9 @@ void check_elf(unsigned char *e_ident)
 
 /**
  * print_magic - Prints the magic numbers of an ELF header.
- * @e_ident: A pointer to an aray containing the ELF magic numbers.
+ * @e_ident: A pointer to an array containing the ELF magic numbers.
  *
- * Description: Magic numbers re separated by spaces.
+ * Description: Magic numbers are separated by spaces.
  */
 void print_magic(unsigned char *e_ident)
 {
@@ -228,7 +228,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 /**
  * print_entry - Prints the entry point of an ELF header.
  * @e_entry: The address of the ELF entry point.
- * @e_ident: A pointer to an array containing the ELF class.
+ * @e_ident: A pointer to an arra containing the ELF class.
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
@@ -265,9 +265,9 @@ void close_elf(int elf)
 }
 
 /**
- * main - Displays the information contained in the
+ * main - Display the information contained in the
  *        ELF header at the start of an ELF file.
- * @argc: The number of arguments supplied to the program.
+ * @argc: The number of argument supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
  * Return: 0 on success.
@@ -313,7 +313,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	print_type(header->e_type, header->e_ident);
 	print_entry(header->e_entry, header->e_ident);
 
-   	free(header);
-        close_elf(o);
-           	return (0);
+	free(header);
+	close_elf(o);
+	return (0);
 }

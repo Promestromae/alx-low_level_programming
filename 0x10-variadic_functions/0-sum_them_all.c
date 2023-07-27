@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
-* sum_them all- a function that returns the sum of all its parameters.
+* sum_them_all - a function that returns the sum of all its parameters.
 * @n: The number of paramters passed to the function.
 * @...: A variable number of paramters to calculate the sum of.
 *

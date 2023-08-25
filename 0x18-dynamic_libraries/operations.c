@@ -1,4 +1,10 @@
-#include <stdio.h>
+#include "math.h"
+/**
+ * div - operates 2 numbers
+ * @a: returns actual value
+ * @b: number
+ * Return: answer
+ */
 
 int add(int a, int b) {
     return a + b;
@@ -27,6 +33,4 @@ int mod(int a, int b) {
     } else {
         printf("Error: Modulus by zero\n");
         return 0;
-    }
-}
 
